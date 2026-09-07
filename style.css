@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --paper: #f8f2e8;
+  --paper-deep: #eee3d2;
+  --ink: #3d3027;
+  --muted: #806f60;
+  --accent: #9b7152;
+  --line: rgba(61, 48, 39, 0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ded6ca;
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+}
+
+.invite {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(155,113,82,.08), transparent 28%),
+    radial-gradient(circle at 85% 80%, rgba(155,113,82,.07), transparent 30%),
+    var(--paper);
+  min-height: 100vh;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(0,0,0,.15);
+}
+
+section {
+  padding: 76px 42px;
+  text-align: center;
+  position: relative;
+}
+
+.hero {
+  min-height: 690px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.ornament {
+  color: var(--accent);
+  font-size: 25px;
+  letter-spacing: 8px;
+  margin-bottom: 14px;
+}
+
+.eyebrow,
+.small-label,
+.event-kicker {
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.blessing {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+  margin: 8px 0 20px;
+  color: var(--muted);
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: clamp(62px, 12vw, 105px);
+  line-height: .95;
+  margin: 0 0 30px;
+  color: var(--ink);
+}
+
+h1 span {
+  font-family: "Cormorant Garamond", serif;
+  font-size: .45em;
+  vertical-align: middle;
+  margin: 0 5px;
+  color: var(--accent);
+}
+
+.intro {
+  max-width: 540px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 21px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.couple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.name-card {
+  flex: 1;
+  max-width: 290px;
+}
+
+.name-card h2,
+.section-heading h2,
+.event-card h3,
+.venue-title,
+.contact-grid h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.name-card h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 8px 0 12px;
+}
+
+.name-card p {
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0;
+}
+
+.ampersand {
+  font-family: "Great Vibes", cursive;
+  color: var(--accent);
+  font-size: 60px;
+}
+
+.date-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.date {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 17px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(42px, 9vw, 66px);
+  margin: 15px 0 5px;
+}
+
+.date i {
+  font-size: .55em;
+  color: var(--accent);
+  font-style: normal;
+}
+
+.day {
+  letter-spacing: 5px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.section-heading span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--accent);
+}
+
+.section-heading h2 {
+  margin: 5px 0 35px;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.event-card,
+.venue-card {
+  border: 1px solid var(--line);
+  padding: 45px 25px;
+  background: rgba(255,255,255,.18);
+}
+
+.event-icon {
+  color: var(--accent);
+  font-size: 24px;
+}
+
+.event-kicker {
+  margin: 12px 0 3px;
+}
+
+.event-card h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 5px 0 20px;
+}
+
+.time {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--muted);
+  font-size: 21px;
+  line-height: 1.55;
+}
+
+.time strong {
+  color: var(--ink);
+}
+
+.venue-title {
+  font-size: 31px;
+  margin: 0 0 8px;
+}
+
+.venue-card p:not(.venue-title) {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 13px 25px;
+  border: 1px solid var(--accent);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 3px;
+  transition: .25s ease;
+}
+
+.button:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.message {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.quote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 27px;
+  line-height: 1.45;
+}
+
+.assamese-note {
+  max-width: 580px;
+  margin: 30px auto 0;
+  font-family: "Noto Serif Bengali", "Noto Sans Bengali", serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  text-align: left;
+}
+
+.contact-grid > div {
+  padding: 25px;
+  border: 1px solid var(--line);
+}
+
+.contact-grid h3 {
+  font-size: 25px;
+  margin: 8px 0 20px;
+  font-weight: 500;
+}
+
+.contact-grid p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.contact-grid a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 55px 30px 70px;
+}
+
+footer .ornament {
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+  margin: 0 0 8px;
+}
+
+footer span {
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--muted);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 62px 24px;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .couple {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .name-card {
+    max-width: 100%;
+  }
+
+  .ampersand {
+    font-size: 45px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote {
+    font-size: 24px;
+  }
+}
